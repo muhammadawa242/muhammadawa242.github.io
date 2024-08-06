@@ -1,5 +1,19 @@
 [
   {
+    "title": "3D Crafting Game",
+    "description": "3D Crafting game in python's Panda3D game engine",
+    "video": "https://www.youtube.com/embed/L68m5XXR2-s?si=AzGHaq9YDALUU40-",
+    "image": "",
+    "image2": "",
+    "image3": "",
+    "technologies": ["Panda3D Game engine", "Physics", "Git"],
+    "body": "I developed a 3D crafting game for my final project for CS50P course using the Panda3D engine. Key features include FPS camera movement, WASD controls, and an item crafting system. The game supports item joining, manual adjustments, and inventory management. It uses a modular, object-oriented design with bullet physics for movement and collision detection. The project includes a basic game design document and asset management. Future plans involve improving rotation functionality, saving crafted models, and refining collision handling.",
+    "github": "https://github.com/muhammadawa242/cs50p_3d_game",
+    "deployed": "",
+    "bgcolor": "#f85781",
+    "id": "1"
+  },
+  {
     "title": "Library Management System",
     "description": "Library Management System developed in Java",
     "video": "https://www.youtube.com/embed/j8p56VwMa5E?si=5wl-yIhOkAEtL4Bf",
@@ -11,20 +25,6 @@
     "github": "https://github.com/muhammadawa242/Library_Management_System",
     "deployed": "",
     "bgcolor": "var(--hl2-color)",
-    "id": "1"
-  },
-  {
-    "title": "TASKHUB",
-    "description": "",
-    "video": "",
-    "image": "",
-    "image2": "/projectImages/storm.jpeg",
-    "image3": "/projectImages/weather3.png",
-    "technologies": ["Java", "Desktop", "GUI"],
-    "body": "Taskhub was a collaborative project developed during my third-semester database systems course. It focused on creating a platform for task management, enabling users to create, assign, and track tasks within a team. The application was developed in Java, providing a desktop-oriented solution with a user-friendly GUI.",
-    "github": "https://github.com/mdyeates/weather-app",
-    "deployed": "",
-    "bgcolor": "var(--hl-color)",
     "id": "2"
   },
   {
@@ -42,20 +42,19 @@
     "id": "3"
   },
   {
-    "title": "3D Crafting Game",
-    "description": "3D Crafting game in python's Panda3D game engine",
-    "video": "https://www.youtube.com/embed/L68m5XXR2-s?si=AzGHaq9YDALUU40-",
+    "title": "TASKHUB",
+    "description": "",
+    "video": "",
     "image": "",
-    "image2": "",
-    "image3": "",
-    "technologies": ["Panda3D Game engine", "Physics", "Git"],
-    "body": "I developed a 3D crafting game for my final project using the Panda3D engine. Key features include FPS camera movement, WASD controls, and an item crafting system. The game supports item joining, manual adjustments, and inventory management. It uses a modular, object-oriented design with bullet physics for movement and collision detection. The project includes a basic game design document and asset management. Future plans involve improving rotation functionality, saving crafted models, and refining collision handling.",
-    "github": "https://github.com/muhammadawa242/cs50p_3d_game",
+    "image2": "/projectImages/storm.jpeg",
+    "image3": "/projectImages/weather3.png",
+    "technologies": ["Java", "Desktop", "GUI"],
+    "body": "Taskhub was a collaborative project developed during my third-semester database systems course. It focused on creating a platform for task management, enabling users to create, assign, and track tasks within a team. The application was developed in Java, providing a desktop-oriented solution with a user-friendly GUI.",
+    "github": "https://github.com/muhammadawa242/taskhub_dbs_project",
     "deployed": "",
-    "bgcolor": "#f85781",
+    "bgcolor": "var(--hl-color)",
     "id": "4"
   },
-
   {
     "title": "Deleted Images Recovery Program",
     "description": "F1 Hub",

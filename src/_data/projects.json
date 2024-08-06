@@ -10,7 +10,7 @@
     "body": "I developed a 3D crafting game for my final project for CS50P course using the Panda3D engine. Key features include FPS camera movement, WASD controls, and an item crafting system. The game supports item joining, manual adjustments, and inventory management. It uses a modular, object-oriented design with bullet physics for movement and collision detection. The project includes a basic game design document and asset management. Future plans involve improving rotation functionality, saving crafted models, and refining collision handling.",
     "github": "https://github.com/muhammadawa242/cs50p_3d_game",
     "deployed": "",
-    "bgcolor": "#f85781",
+    "bgcolor": "var(--hl-color)",
     "id": "1"
   },
   {
@@ -18,8 +18,8 @@
     "description": "Library Management System developed in Java",
     "video": "https://www.youtube.com/embed/j8p56VwMa5E?si=5wl-yIhOkAEtL4Bf",
     "image": "/projectImages/lms.png",
-    "image2": "/projectImages/cyclingfamily.jpeg",
-    "image3": "/projectImages/routes3.png",
+    "image2": "",
+    "image3": "",
     "body": "I developed this management system as my final semester project during my freshman year. It aimed to streamline library operations, offering features for book categorization, user management, and transaction tracking. The system was built using Java, featuring a desktop-based interface with graphical user interface (GUI) elements.",
     "technologies": ["Java", "Desktop", "GUI"],
     "github": "https://github.com/muhammadawa242/Library_Management_System",
@@ -32,13 +32,13 @@
     "description": "2D Desktop game",
     "video": "https://www.youtube.com/embed/z_ngTQi2ttw?si=4Gd_8rNswJpjXeyf",
     "image": "/projectImages/peaky_invaders.png",
-    "image2": "/projectImages/teamcelebrating.jpeg",
-    "image3": "/projectImages/team3.png",
+    "image2": "",
+    "image3": "",
     "technologies": ["Python", "Pygame", "Game Development"],
     "body": "This game serves as the culmination of my work in the CS50X course, developed using Python's Pygame library. It involved designing and coding a 2D space invaders game, integrating graphics, sound, and user interaction. The project showcased my proficiency in Python programming and game development.",
     "github": "https://github.com/muhammadawa242/CS50_Game_project",
     "deployed": "https://mawaiz.itch.io/peaky-invaders-2d-game",
-    "bgcolor": "#6c4bf4",
+    "bgcolor": "var(--hl2-color)",
     "id": "3"
   },
   {
@@ -46,8 +46,8 @@
     "description": "",
     "video": "",
     "image": "",
-    "image2": "/projectImages/storm.jpeg",
-    "image3": "/projectImages/weather3.png",
+    "image2": "",
+    "image3": "",
     "technologies": ["Java", "Desktop", "GUI"],
     "body": "Taskhub was a collaborative project developed during my third-semester database systems course. It focused on creating a platform for task management, enabling users to create, assign, and track tasks within a team. The application was developed in Java, providing a desktop-oriented solution with a user-friendly GUI.",
     "github": "https://github.com/muhammadawa242/taskhub_dbs_project",
@@ -66,7 +66,7 @@
     "technologies": ["C", "File Recovery", "Low-Level Programming"],
     "github": "https://github.com/muhammadawa242/image_recovery",
     "deployed": "",
-    "bgcolor": "#e47911",
+    "bgcolor": "var(--hl-color)",
     "id": "5"
   },
 
@@ -81,7 +81,7 @@
     "body": "A dynamic web application called CS50's Finance using Flask, Python's web framework. The application incorporates HTML, CSS, JavaScript, Jinja, and SQL to provide a robust experience for tracking stock prices, managing a portfolio, and simulating stock trading. The project demonstrated my full-stack development capabilities.",
     "github": "https://github.com/muhammadawa242/last_week",
     "deployed": "",
-    "bgcolor": "#3e67ff",
+    "bgcolor": "var(--hl2-color)",
     "id": "6"
   }
 ]

@@ -24,7 +24,7 @@
     "body": "I developed a 3D crafting game for my final project for CS50P course using the Panda3D engine. Key features include FPS camera movement, WASD controls, and an item crafting system. The game supports item joining, manual adjustments, and inventory management. It uses a modular, object-oriented design with bullet physics for movement and collision detection. The project includes a basic game design document and asset management. Future plans involve improving rotation functionality, saving crafted models, and refining collision handling.",
     "github": "https://github.com/muhammadawa242/cs50p_3d_game",
     "deployed": "",
-    "bgcolor": "var(--hl-color)",
+    "bgcolor": "var(--hl2-color)",
     "id": "2"
   },
   {
@@ -52,7 +52,7 @@
     "body": "This game serves as the culmination of my work in the CS50X course, developed using Python's Pygame library. It involved designing and coding a 2D space invaders game, integrating graphics, sound, and user interaction. The project showcased my proficiency in Python programming and game development.",
     "github": "https://github.com/muhammadawa242/CS50_Game_project",
     "deployed": "https://mawaiz.itch.io/peaky-invaders-2d-game",
-    "bgcolor": "var(--hl2-color)",
+    "bgcolor": "var(--hl-color)",
     "id": "4"
   },
   {
@@ -80,7 +80,7 @@
     "technologies": ["C", "File Recovery", "Low-Level Programming"],
     "github": "https://github.com/muhammadawa242/image_recovery",
     "deployed": "",
-    "bgcolor": "var(--hl-color)",
+    "bgcolor": "var(--hl2-color)",
     "id": "6"
   },
 

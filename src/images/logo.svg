@@ -12,8 +12,8 @@
 
       .cls-2 {
         fill: #fefefe;
-        stroke: #48a3c6;
-        stroke-width: 20;
+        stroke: #000;
+        stroke-width: 10;
       }
     </style>
   </defs>

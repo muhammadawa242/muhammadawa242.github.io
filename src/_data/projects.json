@@ -1,5 +1,19 @@
 [
   {
+    "title": "Social Media Application",
+    "description": "Full Stack Social Media web app developed using MERN",
+    "video": "https://www.youtube.com/embed/swAQcUAL7jk?si=G0lrY5hXDlUP5KDC",
+    "image": "",
+    "image2": "",
+    "image3": "",
+    "technologies": ["AWS", "Mongodb", "React", "Express", "Node", "Git"],
+    "body": "Created as my 6th-semester final project using the MERN stack and AWS S3 for cloud-based image and video storage. As the team lead, I oversaw backend development, API integration with the frontend, and managed AWS S3 integration. The application is fully deployable and accessible online.",
+    "github": "https://github.com/muhammadawa242/SWC_semester_project",
+    "deployed": "",
+    "bgcolor": "var(--hl-color)",
+    "id": "1"
+  },
+  {
     "title": "3D Crafting Game",
     "description": "3D Crafting game in python's Panda3D game engine",
     "video": "https://www.youtube.com/embed/L68m5XXR2-s?si=AzGHaq9YDALUU40-",
@@ -11,7 +25,7 @@
     "github": "https://github.com/muhammadawa242/cs50p_3d_game",
     "deployed": "",
     "bgcolor": "var(--hl-color)",
-    "id": "1"
+    "id": "2"
   },
   {
     "title": "Library Management System",
@@ -25,7 +39,7 @@
     "github": "https://github.com/muhammadawa242/Library_Management_System",
     "deployed": "",
     "bgcolor": "var(--hl2-color)",
-    "id": "2"
+    "id": "3"
   },
   {
     "title": "Space Invaders Game",
@@ -39,11 +53,11 @@
     "github": "https://github.com/muhammadawa242/CS50_Game_project",
     "deployed": "https://mawaiz.itch.io/peaky-invaders-2d-game",
     "bgcolor": "var(--hl2-color)",
-    "id": "3"
+    "id": "4"
   },
   {
     "title": "TASKHUB",
-    "description": "",
+    "description": "Full stack Web Application for students to delegate their tasks to each other",
     "video": "",
     "image": "",
     "image2": "",
@@ -53,11 +67,11 @@
     "github": "https://github.com/muhammadawa242/taskhub_dbs_project",
     "deployed": "",
     "bgcolor": "var(--hl-color)",
-    "id": "4"
+    "id": "5"
   },
   {
     "title": "Deleted Images Recovery Program",
-    "description": "F1 Hub",
+    "description": "A CLI program to recover images from .raw file",
     "video": "",
     "image": "",
     "image2": "",
@@ -67,12 +81,12 @@
     "github": "https://github.com/muhammadawa242/image_recovery",
     "deployed": "",
     "bgcolor": "var(--hl-color)",
-    "id": "5"
+    "id": "6"
   },
 
   {
     "title": "Binance Web App",
-    "description": "Conquer your day",
+    "description": "Full Stack Web Application using IEX API for stock prices",
     "video": "",
     "image": "",
     "image2": "",
@@ -82,6 +96,6 @@
     "github": "https://github.com/muhammadawa242/last_week",
     "deployed": "",
     "bgcolor": "var(--hl2-color)",
-    "id": "6"
+    "id": "7"
   }
 ]

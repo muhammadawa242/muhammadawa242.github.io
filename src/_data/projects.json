@@ -60,7 +60,7 @@
     "description": "Full stack Web Application for students to delegate their tasks to each other",
     "video": "",
     "image": "",
-    "image2": "",
+    "image2": "/projectImages/lms.png",
     "image3": "",
     "technologies": ["Java", "Desktop", "GUI"],
     "body": "Taskhub was a collaborative project developed during my third-semester database systems course. It focused on creating a platform for task management, enabling users to create, assign, and track tasks within a team. The application was developed in Java, providing a desktop-oriented solution with a user-friendly GUI.",

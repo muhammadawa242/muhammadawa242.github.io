@@ -7,6 +7,7 @@ import Button from "../../../components/Button";
 import Image from "../../../components/Image";
 import projects from "../../../_data/projects.json";
 import Footer from "../../../components/Footer";
+import no_image from "../../../images/no_img.png";
 
 /**
  * Represents the ProjectDetails page component.
@@ -45,7 +46,8 @@ const ProjectDetails = () => {
             <div className="col-12 col-xl-4 projectImage">
               {/* Display the project image if video url is empty*/}
             {project.video == "" ?
-                <Image src={project.image2} alt={project.name} opacity="0.5" /> :
+                {project.image2 !== "" ? <Image src={project.image2} alt={project.name} opacity="0.5" /> :
+                <Image src={no_image} alt="Laptop displaying the application" />} :
                 <iframe height="100%" src={project.video} title="YouTube video player" frameborder="10" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             }
             </div>

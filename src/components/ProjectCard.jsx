@@ -3,7 +3,6 @@ import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import { FiArrowUpRight } from "react-icons/fi";
 import Image from "./Image";
-import no_image from "../images/no_img.png";
 
 /**
  * Represents a project card component.
@@ -48,9 +47,8 @@ const ProjectCard = ({ title, image, color, id }) => {
             </span>
           </div>
           <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
-            {image !== "" ? 
-                <Image src={"%PUBLIC_URL%" + image} alt="Laptop displaying the application" /> : 
-                <Image src={no_image} alt="Laptop displaying the application" />
+            {image !== "" && 
+                <Image src={"%PUBLIC_URL%" + image} alt="Laptop displaying the application" /> 
             }
           </div>
         </div>

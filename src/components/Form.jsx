@@ -1,25 +1,23 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import validator from "email-validator";
 import Button from "./Button";
+
+// Make sure to import the EmailJS package at the top of your file
+import emailjs from '@emailjs/browser';
 
 /**
  * Contact Form Component
  * ----------------------
  * This component represents a fully functional contact form.
- *
- * @component
- *
- * Form Submission API Key:
- * ------------------------
- * To enable form submissions, obtain your API Key from https://web3forms.com/
- *
- * Follow these steps:
- * 1. Create a .env file in the root directory.
- * 2. Copy and paste the following line into your .env file, replacing with your API key:
- *    REACT_APP_ACCESS_KEY="Your API Key"
- *
+ * Form Submission API Key: 
+ * -------------------------
+ * To enable form submissions, obtain your API Key from EmailJS.
+ * 
+ * Follow these steps to use EmailJS in your app:
+ * 1. Get your public key from the EmailJS dashboard.
+ * 2. Replace the `YOUR_PUBLIC_KEY` below with your actual public key.
  */
 
 const Form = () => {
@@ -28,7 +26,6 @@ const Form = () => {
     triggerOnce: true,
   });
 
-  // State for handling form submission statuses and errors
   const [success, setSuccess] = useState(false);
   const [sending, setSending] = useState(false);
   const [failed, setFailed] = useState(false);
@@ -37,14 +34,17 @@ const Form = () => {
   const [subjectError, setSubjectError] = useState(false);
   const [messageError, setMessageError] = useState(false);
 
-  // State for form data
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
-    access_key: process.env.REACT_APP_ACCESS_KEY,
   });
+
+  // Initialize EmailJS with your public key
+  useEffect(() => {
+    emailjs.init(process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY); // Replace with your actual public key from EmailJS
+  }, []);
 
   // Handle input change
   const handleChange = (e) => {
@@ -65,7 +65,9 @@ const Form = () => {
 
     // Validate and set error states
     formData.name === "" ? setNameError(true) : setNameError(false);
-    formData.email === "" || !validator.validate(formData.email) ? setEmailError(true) : setEmailError(false);
+    formData.email === "" || !validator.validate(formData.email)
+      ? setEmailError(true)
+      : setEmailError(false);
     formData.subject === "" ? setSubjectError(true) : setSubjectError(false);
     formData.message === "" ? setMessageError(true) : setMessageError(false);
 
@@ -93,39 +95,38 @@ const Form = () => {
     // Form submission in progress
     setSending(true);
 
-    const data = JSON.stringify(formData);
-    // Send form data to an API endpoint
-    fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: data,
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        // Form submission success
-        setSending(false);
-        setSuccess(true);
-        setFailed(false);
-        setFormData({
-          ...formData,
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-        setTimeout(() => {
-          setSuccess(false);
-        }, 3000);
-      })
-      .catch((err) => {
-        // Form submission failed
-        console.log(err);
-        setSending(false);
-        setFailed(true);
-      });
+    // Create a FormData object to send to EmailJS
+    const form = document.querySelector("#contact-form");
+
+    // Ensure EmailJS is properly initialized before calling sendForm
+    if (emailjs) {
+      emailjs
+        .sendForm("contact_service", "contact_form", form) // Replace YOUR_SERVICE_ID with your service ID from EmailJS
+        .then(
+          () => {
+            setSending(false);
+            setSuccess(true);
+            setFailed(false);
+            setFormData({
+              ...formData,
+              name: "",
+              email: "",
+              subject: "",
+              message: "",
+            });
+            setTimeout(() => {
+              setSuccess(false);
+            }, 3000);
+          },
+          (error) => {
+            console.error("Failed to send message:", error);
+            setSending(false);
+            setFailed(true);
+          }
+        );
+    } else {
+      console.error("EmailJS is not properly initialized.");
+    }
   };
 
   // Determine button text based on status
@@ -143,7 +144,7 @@ const Form = () => {
 
   return (
     <motion.form
-      action=""
+      id="contact-form"
       ref={ref}
       className="contactForm"
       initial={{ y: "10vw", opacity: 0 }}
@@ -225,3 +226,4 @@ const Form = () => {
 };
 
 export default Form;
+
